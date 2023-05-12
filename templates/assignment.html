@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Style.css' %}">
+    <style>
+        .new{
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="new">
+<a href="{% url 'assist' %}">Visit assignment</a>
+<a href="{% url 'list' %}">Visit assignment2</a>
+<a href="{% url 'animal' %}">Visit assignment3</a>
+<a href="{% url 'forms' %}">Visit assignment4</a>
+    </div>
+<h1 class="text">TEXT ON IMAGE</h1>
+</body>
+</html>

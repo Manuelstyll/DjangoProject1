@@ -1,0 +1,12 @@
+body{
+    background-image: url("/static/images/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 200px;
+    color: red;
+
+}

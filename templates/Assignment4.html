@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/Style4.css' %}">
+    <title>Assignment 4</title>
+    <style>
+        .new4{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="new4">
+<a href="{% url 'assist' %}">Visit assignment</a>
+<a href="{% url 'list' %}">Visit assignment2</a>
+<a href="{% url 'animal' %}">Visit assignment3</a>
+<a href="{% url 'forms' %}">Visit assignment4</a>
+    </div>
+<!---Main Division--->
+<div class="main">
+    <!---First Division--->
+    <div class="main2" >
+        <form>
+        <legend>Billing details</legend>
+        <hr>
+
+        <input type="" id="Fname" placeholder="First name">
+
+        <input type="" id="lname" placeholder="Last name"> <br><br>
+
+        <input type="text" id="cn" placeholder="Company name"> <br><br>
+
+        <input type="text" id="Address" placeholder="Address"> <br><br>
+
+        <input type="email" id="email" placeholder="Email"> <br><br>
+
+        <input type="text" id="phone" placeholder="Phone"> <br><br>
+
+        <textarea name="" id="info" cols="56" rows="7" placeholder="Additional information"></textarea> <br> <br>
+
+
+        <input type="checkbox" name="account">Create an account?
+</form>
+        <br><br><br>
+    </div>
+    <!---Second Division--->
+    <div class="main3">
+        <form>
+        <legend>Summary</legend>
+        <hr>
+        <p>Products      $53.98</p><br>
+        <p>Shipping      $Gratis</p>
+        <hr>
+        <p><b>Total amount  $53.98</b></p>
+        <p><b>(including VAT)</b></p> <br>
+
+        <button type="button" class="btn btn-primary" style="height: 40px;width: 100%;background-color: dodgerblue;color: white">MAKE PURCHASE</button>
+       </form>
+        <br><br><br><br>
+    </div>
+</div>
+</body>
+</html>

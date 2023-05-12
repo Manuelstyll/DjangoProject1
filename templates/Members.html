@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Members</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Style5.css' %}">
+    <style>
+        *{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Student Details</h1>
+<ul>
+{% for x in members %}
+<li>{{ x.firstname }} {{ x.lastname }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

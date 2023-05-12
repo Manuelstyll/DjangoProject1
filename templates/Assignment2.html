@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Assignment2</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Style2.css' %}">
+    <style>
+        .new2{
+    background-color: aqua;
+    font-size: 10px;
+}
+    </style>
+</head>
+<body>
+<div class="new2">
+    <a href="{% url 'assist' %}">Visit assignment</a>
+    <a href="{% url 'animal' %}">Visit assignment3</a>
+    <a href="{% url 'forms' %}">Visit assignment4</a>
+</div>
+
+<img src="{% static 'images/img3.jpg' %}" alt="" style="height: 400px;width: 500px">
+<p class="read">Spring is the season when life's alive in everything.</p>
+</body>
+</html>
